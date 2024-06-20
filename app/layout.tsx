@@ -8,8 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
-      <SpeedInsights />
+      <body className={`${inter.className} antialiased`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
